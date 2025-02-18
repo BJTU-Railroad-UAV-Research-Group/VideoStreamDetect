@@ -74,7 +74,7 @@ We hope this example helps you integrate YOLOv8 with OpenVINO and OpenCV into yo
 
 
 
-# OpenCV 4.5+版本的安装与配置
+# OpenCV 4.5+版本的安装与配置（经测试验证4.2版本也可以使用）
 
 ## 1.从源码编译安装
 
@@ -200,4 +200,3 @@ make -j$(nproc)
 ```bash
 ./yolo_rtmp {model.onnx} {rtmp://your_rtmp_server/live/input} {rtmp://your_rtmp_server/live/output}
 ```
-
