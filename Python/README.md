@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-该项目包括一个 `start.sh` 脚本，旨在启动并持续运行 `process.py` 脚本。`process.py` 脚本用于视频流处理、目标检测，并将处理结果推送至指定的流媒体服务。此脚本支持传入多个超参数，用户可以自定义输入流、输出流、FFmpeg路径以及YOLO模型路径。
+该项目包括一个 `start-v1.0.20250114.sh`和一个`start-v1.0.20250225.sh` 脚本，旨在启动并持续运行 `process.py` 脚本。`process.py` 脚本用于视频流处理、目标检测，并将处理结果推送至指定的流媒体服务。此脚本支持传入多个超参数，用户可以自定义输入流、输出流、FFmpeg路径以及YOLO模型路径。
 
 ## 系统要求
 
@@ -32,11 +32,11 @@
 2. 确保你的系统中已安装 FFmpeg。可以从[FFmpeg官方网站](https://ffmpeg.org/download.html)下载并安装。
 
 
-## 使用说明
+## 使用说明（1）
 
-### 1. 启动 `start.sh` 脚本
+### 1. 启动 `start-v1.0.20250114.sh` 脚本
 
-`start.sh` 脚本用于启动 `process.py` 脚本，并支持以下超参数：
+`start-v1.0.20250114.sh` 脚本用于启动 `process.py` 脚本，并支持以下超参数：
 
 - `--input_stream`：输入流的 URL，默认为 `rtmp://localhost:1935/obs/stream`。
 - `--output_stream`：输出流的 URL，默认为 `rtmp://localhost:1935/output/stream`。
@@ -46,13 +46,13 @@
 #### 启动脚本：
 
 ```bash
-./start.sh --input_stream "rtmp://your_input_stream" --output_stream "rtmp://your_output_stream" --ffmpeg_path "/path/to/ffmpeg" --yolo_model_path "/path/to/yolo_model.pt"
+./start-v1.0.20250114.sh --input_stream "rtmp://your_input_stream" --output_stream "rtmp://your_output_stream" --ffmpeg_path "/path/to/ffmpeg" --yolo_model_path "/path/to/yolo_model.pt"
 ```
 
 如果不传入某些参数，则会使用默认值。例如：
 
 ```bash
-./start.sh --input_stream "rtmp://new_input_stream" --yolo_model_path "/new_model/path"
+./start-v1.0.20250114.sh --input_stream "rtmp://new_input_stream" --yolo_model_path "/new_model/path"
 ```
 
 这将只更改 `input_stream` 和 `yolo_model_path`，其他参数使用默认值。
@@ -69,7 +69,52 @@
 ### 3. 脚本功能
 
 - **`process.py`**：该脚本负责从输入流中读取视频帧，使用 YOLO 模型进行目标检测，并将检测结果通过 FFmpeg 推送到输出流。
-- **`start.sh`**：该脚本通过 `python process.py` 启动视频流处理，支持传入超参数，若未传入则使用默认值。并且会无限循环，检测到 `process.py` 异常退出时自动重启。
+- **`start-v1.0.20250114.sh`**：该脚本通过 `python process.py` 启动视频流处理，支持传入超参数，若未传入则使用默认值。并且会无限循环，检测到 `process.py` 异常退出时自动重启。
+
+### 4. 退出脚本
+
+- 若要手动停止脚本，可以按 `Ctrl+C`。
+
+## 使用说明（2）
+
+### 1. 启动 `start-v1.0.20250225.sh` 脚本
+
+`start-v1.0.20250225.sh` 脚本用于启动 `process-v1.0.20250225.py`，支持以下超参数：
+
+- `--input_stream`：输入流的 URL，默认为 `rtmp://localhost:1935/obs/stream`。
+- `--output_stream`：输出流的 URL，默认为 `rtmp://localhost:1935/output/stream`。
+- `--ffmpeg_path`：FFmpeg 执行文件的路径，默认为 `D:/VideoStream/ffmpeg-N-102557-g11b489d592-win64-gpl/bin/ffmpeg.exe`。
+- `--yolo_model_path`：YOLO 模型权重文件的路径，默认为 `yolo-train/train/weights/best.pt`。
+- `--csv_path`：输出的 CSV 文件路径，默认为 `output.csv`。
+
+#### 启动脚本：
+
+```bash
+./start-v1.0.20250225.sh --input_stream "rtmp://your_input_stream" --output_stream "rtmp://your_output_stream" --ffmpeg_path "/path/to/ffmpeg" --yolo_model_path "/path/to/yolo_model.pt" --csv_path "/path/to/output.csv"
+```
+
+如果不传入某些参数，则会使用默认值。例如：
+
+```bash
+./start-v1.0.20250225.sh --csv_path "results.csv"
+```
+
+这将只更改 `csv_path`，其他参数使用默认值。
+
+### 2. 参数说明
+
+| 参数                | 描述                    | 默认值                                                       |
+| ------------------- | ----------------------- | ------------------------------------------------------------ |
+| `--input_stream`    | 输入流的 URL            | `rtmp://localhost:1935/obs/stream`                           |
+| `--output_stream`   | 输出流的 URL            | `rtmp://localhost:1935/output/stream`                        |
+| `--ffmpeg_path`     | FFmpeg 执行文件的路径   | `D:/VideoStream/ffmpeg-N-102557-g11b489d592-win64-gpl/bin/ffmpeg.exe` |
+| `--yolo_model_path` | YOLO 模型权重文件的路径 | `yolo-train/train/weights/best.pt`                           |
+| `--csv_path`        | 输出 CSV 文件的路径     | `output.csv`                                                 |
+
+### 3. 脚本功能
+
+- `**process-v1.0.20250225.py**`：该脚本负责从输入流中读取视频帧，使用 YOLO 模型进行目标检测，将检测结果通过 FFmpeg 推送到输出流，并将检测数据存入 CSV 文件。
+- `**start-v1.0.20250225.sh**`：该脚本通过 `python process-v1.0.20250225.py` 启动视频流处理，支持传入超参数，若未传入则使用默认值。
 
 ### 4. 退出脚本
 
