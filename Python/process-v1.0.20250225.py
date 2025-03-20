@@ -69,7 +69,7 @@ if __name__ == "__main__":
         if not ret:
             print("Video processing completed or stream ended.")
             break
-	if frame_count == 0:
+        if frame_count == 0:
             print("<-----------------------model loads successfully and prepares to detect!---------------------->")
         frame_count += 1
         hours = int(frame_count / (fps * 3600))
