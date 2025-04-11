@@ -6,7 +6,7 @@ import random
 import csv
 import yaml
 from ultralytics import YOLO
-from plot_result.plot import plot_one_box_pil
+from plot_result.plot import plot_one_box_pil, plot_one_box_mixed
 
 def load_config(path, model_name):
     with open(path, 'r', encoding='utf-8') as file:
@@ -83,7 +83,7 @@ if __name__ == "__main__":
             conf = float(conf) * 100
             label_name = names[int(num)]
             label_name_ch = mapping_ch[label_name]
-            im0 = plot_one_box_pil(xyxy=xyxy, img=im0, label=f'{label_name_ch} {conf:.2f}%', color=colors[label_name], line_thickness=int(im0.shape[0] / 250))
+            im0 = plot_one_box_mixed(xyxy=xyxy, img=im0, label=f'{label_name_ch} {conf:.2f}%', color=colors[label_name], line_thickness=int(im0.shape[0] / 250))
             
             if args.write_csv:
                 csv_writer.writerow([timestamp, label_name, list(map(int, xyxy.tolist())), f"{conf:.2f}%"])  
