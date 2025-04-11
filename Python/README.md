@@ -111,10 +111,51 @@
 | `--yolo_model_path` | YOLO 模型权重文件的路径 | `yolo-train/train/weights/best.pt`                           |
 | `--csv_path`        | 输出 CSV 文件的路径     | `output.csv`                                                 |
 
+## 使用说明（3）
+
+### 1. 启动 `start-v1.0.20250411.sh` 脚本
+
+`start-v1.0.20250411.sh` 脚本用于启动 `process-v1.0.20250411.py`，支持以下超参数：
+
+- `--input_stream`：输入流的 URL，默认为 `rtmp://localhost:1935/obs/stream`。
+- `--output_stream`：输出流的 URL，默认为 `rtmp://localhost:1935/output/stream`。
+- `--ffmpeg_path`：FFmpeg 执行文件的路径，默认为 `D:/VideoStream/ffmpeg-N-102557-g11b489d592-win64-gpl/bin/ffmpeg.exe`。
+- `--yolo_model_path`：YOLO 模型权重文件的路径，默认为 `yolo-train/train/weights/best.pt`。
+- `--csv_path`：输出的 CSV 文件路径，默认为 `output.csv`。
+- `--model_name`：在`config/plot_name_ch.yml`文件中要映射中文名称的模型名称，默认为 `construction_detect_construction_mengft-v1.0.20250402`。
+
+#### 启动脚本：
+
+```bash
+./start-v1.0.20250411.sh --input_stream "rtmp://your_input_stream" --output_stream "rtmp://your_output_stream" --ffmpeg_path "/path/to/ffmpeg" --yolo_model_path "/path/to/yolo_model.pt" --csv_path "/path/to/output.csv" --model_name "model_name_in_plot_name_ch_yml_file"
+```
+
+如果不传入某些参数，则会使用默认值。例如：
+
+```bash
+./start-v1.0.20250411.sh --csv_path "results.csv"
+```
+
+这将只更改 `csv_path`，其他参数使用默认值。
+
+### 2. 参数说明
+
+| 参数                | 描述                                                    | 默认值                                                       |
+| ------------------- | ------------------------------------------------------- | ------------------------------------------------------------ |
+| `--input_stream`    | 输入流的 URL                                            | `rtmp://localhost:1935/obs/stream`                           |
+| `--output_stream`   | 输出流的 URL                                            | `rtmp://localhost:1935/output/stream`                        |
+| `--ffmpeg_path`     | FFmpeg 执行文件的路径                                   | `D:/VideoStream/ffmpeg-N-102557-g11b489d592-win64-gpl/bin/ffmpeg.exe` |
+| `--yolo_model_path` | YOLO 模型权重文件的路径                                 | `weight/`construction_detect_construction_mengft-v1.0.20250402`.pt` |
+| `--csv_path`        | 输出 CSV 文件的路径                                     | `output.csv`                                                 |
+| `--model_name`      | `config/plot_name_ch.yml`文件中要映射中文名称的模型名称 | `construction_detect_construction_mengft-v1.0.20250402`      |
+
+### 3. 脚本功能
+
 ### 3. 脚本功能
 
 - `**process-v1.0.20250225.py**`：该脚本负责从输入流中读取视频帧，使用 YOLO 模型进行目标检测，将检测结果通过 FFmpeg 推送到输出流，并将检测数据存入 CSV 文件。
 - `**start-v1.0.20250225.sh**`：该脚本通过 `python process-v1.0.20250225.py` 启动视频流处理，支持传入超参数，若未传入则使用默认值。
+- `**start-v1.0.20250411.sh**`：该脚本通过 `python process-v1.0.20250411.py` 启动视频流处理，新增视频流可视化绘制使用中文标注，支持传入超参数，若未传入则使用默认值。
 
 ### 4. 退出脚本
 

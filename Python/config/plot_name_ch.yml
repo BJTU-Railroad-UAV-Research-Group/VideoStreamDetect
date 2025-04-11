@@ -1,0 +1,18 @@
+# config.yml
+jh_detect_environment_mengft-v1.0.20241117:
+  Railroad: 轨道
+  Car: 汽车
+  CementRoom: 房屋设施 
+  ColorSteelTile: 彩钢瓦
+  PlasticFilm: 塑料膜
+  AsbestosTile: 石棉瓦
+  Rubbish: 垃圾堆积
+construction_detect_construction_mengft-v1.0.20250402:
+  tower_crane: 塔吊
+  excavator: 挖掘机
+  pile_driver: 打桩机
+  excavation_work: 土方作业
+  excavation_support: 基坑支护
+  piling_work: 桩基施工
+  pile_cap: 平台防水
+  structure_construction: 结构施工

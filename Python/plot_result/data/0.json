@@ -1,0 +1,42 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "Box": {
+        "x1": 401,
+        "x2": 608,
+        "y1": 0,
+        "y2": 1408
+      },
+      "FaultType": "ENV_1_7_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_7",
+      "OrderNo": 0,
+      "Score": 0.962,
+      "defect_type_name": "轨道",
+      "inspect_object_type_name": "轨道类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 21,
+        "x2": 218,
+        "y1": 0,
+        "y2": 1408
+      },
+      "FaultType": "ENV_1_7_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_7",
+      "OrderNo": 1,
+      "Score": 0.9582,
+      "defect_type_name": "轨道",
+      "inspect_object_type_name": "轨道类",
+      "isFault": "False"
+    }
+  ],
+  "id": "2025011601",
+  "msg": "successed",
+  "path": "F:/2023JH项目/202307模型权重更新/周边环境/jh_detect_environment_mengft-v1.0.20241117/data/0.jpg",
+  "time": 4.2216,
+  "version": "v1.0.20230101"
+}

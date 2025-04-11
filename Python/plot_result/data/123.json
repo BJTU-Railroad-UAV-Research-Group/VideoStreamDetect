@@ -1,0 +1,90 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "Box": {
+        "x1": 324,
+        "x2": 538,
+        "y1": 0,
+        "y2": 1419
+      },
+      "FaultType": "ENV_1_7_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_7",
+      "OrderNo": 0,
+      "Score": 0.966,
+      "defect_type_name": "轨道",
+      "inspect_object_type_name": "轨道类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 727,
+        "x2": 774,
+        "y1": 256,
+        "y2": 326
+      },
+      "FaultType": "ENV_1_2_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_2",
+      "OrderNo": 0,
+      "Score": 0.9345,
+      "defect_type_name": "塑料膜",
+      "inspect_object_type_name": "轻飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 1303,
+        "x2": 1355,
+        "y1": 980,
+        "y2": 1035
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 0,
+      "Score": 0.9296,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 1300,
+        "x2": 1353,
+        "y1": 899,
+        "y2": 947
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 1,
+      "Score": 0.9144,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 642,
+        "x2": 663,
+        "y1": 0,
+        "y2": 50
+      },
+      "FaultType": "ENV_1_2_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_2",
+      "OrderNo": 1,
+      "Score": 0.8617,
+      "defect_type_name": "塑料膜",
+      "inspect_object_type_name": "轻飘浮物类",
+      "isFault": "True"
+    }
+  ],
+  "id": "2025011601",
+  "msg": "successed",
+  "path": "F:/2023JH项目/202307模型权重更新/周边环境/jh_detect_environment_mengft-v1.0.20241117/data/123.jpg",
+  "time": 0.3495,
+  "version": "v1.0.20230101"
+}

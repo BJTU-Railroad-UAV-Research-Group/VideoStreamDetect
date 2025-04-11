@@ -1,0 +1,730 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "Box": {
+        "x1": 1296,
+        "x2": 1885,
+        "y1": 0,
+        "y2": 1366
+      },
+      "FaultType": "ENV_1_7_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_7",
+      "OrderNo": 0,
+      "Score": 0.9784,
+      "defect_type_name": "轨道",
+      "inspect_object_type_name": "轨道类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 0,
+        "x2": 416,
+        "y1": 1062,
+        "y2": 1365
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 0,
+      "Score": 0.9689,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 207,
+        "x2": 526,
+        "y1": 373,
+        "y2": 698
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 1,
+      "Score": 0.9678,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 455,
+        "x2": 683,
+        "y1": 790,
+        "y2": 998
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 2,
+      "Score": 0.9675,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 375,
+        "x2": 648,
+        "y1": 1127,
+        "y2": 1366
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 3,
+      "Score": 0.9659,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 641,
+        "x2": 878,
+        "y1": 726,
+        "y2": 1075
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 4,
+      "Score": 0.9655,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 504,
+        "x2": 898,
+        "y1": 446,
+        "y2": 743
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 5,
+      "Score": 0.9641,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 191,
+        "x2": 450,
+        "y1": 770,
+        "y2": 1004
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 6,
+      "Score": 0.9628,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 0,
+        "x2": 289,
+        "y1": 666,
+        "y2": 901
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 7,
+      "Score": 0.9626,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 122,
+        "x2": 359,
+        "y1": 124,
+        "y2": 366
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 8,
+      "Score": 0.962,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 27,
+        "x2": 265,
+        "y1": 333,
+        "y2": 664
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 9,
+      "Score": 0.9607,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 612,
+        "x2": 837,
+        "y1": 1103,
+        "y2": 1366
+      },
+      "FaultType": "ENV_1_1_3",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 0,
+      "Score": 0.9585,
+      "defect_type_name": "石棉瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 650,
+        "x2": 838,
+        "y1": 13,
+        "y2": 184
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 10,
+      "Score": 0.9567,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 569,
+        "x2": 768,
+        "y1": 175,
+        "y2": 462
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 11,
+      "Score": 0.9563,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 319,
+        "x2": 573,
+        "y1": 141,
+        "y2": 388
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 12,
+      "Score": 0.9554,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 0,
+        "x2": 138,
+        "y1": 258,
+        "y2": 469
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 0,
+      "Score": 0.954,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 740,
+        "x2": 894,
+        "y1": 152,
+        "y2": 471
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 13,
+      "Score": 0.951,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 458,
+        "x2": 670,
+        "y1": 1047,
+        "y2": 1165
+      },
+      "FaultType": "ENV_1_1_3",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 1,
+      "Score": 0.9496,
+      "defect_type_name": "石棉瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 237,
+        "x2": 638,
+        "y1": 0,
+        "y2": 170
+      },
+      "FaultType": "ENV_1_3_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_3",
+      "OrderNo": 14,
+      "Score": 0.9465,
+      "defect_type_name": "房屋设施",
+      "inspect_object_type_name": "违建违占类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 0,
+        "x2": 212,
+        "y1": 909,
+        "y2": 1031
+      },
+      "FaultType": "ENV_1_1_3",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 2,
+      "Score": 0.9355,
+      "defect_type_name": "石棉瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 333,
+        "x2": 527,
+        "y1": 346,
+        "y2": 439
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 1,
+      "Score": 0.9323,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 486,
+        "x2": 651,
+        "y1": 993,
+        "y2": 1067
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 2,
+      "Score": 0.9304,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 4,
+        "x2": 270,
+        "y1": 0,
+        "y2": 94
+      },
+      "FaultType": "ENV_1_1_3",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 3,
+      "Score": 0.9258,
+      "defect_type_name": "石棉瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 349,
+        "x2": 448,
+        "y1": 163,
+        "y2": 212
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 3,
+      "Score": 0.9233,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 867,
+        "x2": 903,
+        "y1": 960,
+        "y2": 1042
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 0,
+      "Score": 0.9212,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 875,
+        "x2": 917,
+        "y1": 665,
+        "y2": 741
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 1,
+      "Score": 0.9199,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 850,
+        "x2": 891,
+        "y1": 1171,
+        "y2": 1256
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 2,
+      "Score": 0.9198,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 0,
+        "x2": 168,
+        "y1": 209,
+        "y2": 271
+      },
+      "FaultType": "ENV_1_1_3",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 4,
+      "Score": 0.9189,
+      "defect_type_name": "石棉瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 0,
+        "x2": 67,
+        "y1": 475,
+        "y2": 641
+      },
+      "FaultType": "ENV_1_1_3",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 5,
+      "Score": 0.9186,
+      "defect_type_name": "石棉瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 576,
+        "x2": 725,
+        "y1": 424,
+        "y2": 513
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 4,
+      "Score": 0.9183,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 992,
+        "x2": 1027,
+        "y1": 945,
+        "y2": 1025
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 3,
+      "Score": 0.9142,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 886,
+        "x2": 924,
+        "y1": 756,
+        "y2": 837
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 4,
+      "Score": 0.9112,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 928,
+        "x2": 962,
+        "y1": 111,
+        "y2": 172
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 5,
+      "Score": 0.911,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 1028,
+        "x2": 1064,
+        "y1": 462,
+        "y2": 534
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 6,
+      "Score": 0.9089,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 888,
+        "x2": 925,
+        "y1": 382,
+        "y2": 455
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 7,
+      "Score": 0.9074,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 1034,
+        "x2": 1065,
+        "y1": 299,
+        "y2": 362
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 8,
+      "Score": 0.9069,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 900,
+        "x2": 939,
+        "y1": 583,
+        "y2": 658
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 9,
+      "Score": 0.9059,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 920,
+        "x2": 954,
+        "y1": 498,
+        "y2": 576
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 10,
+      "Score": 0.9049,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 872,
+        "x2": 912,
+        "y1": 852,
+        "y2": 937
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 11,
+      "Score": 0.9039,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 50,
+        "x2": 208,
+        "y1": 887,
+        "y2": 925
+      },
+      "FaultType": "ENV_1_1_1",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_1",
+      "OrderNo": 5,
+      "Score": 0.8878,
+      "defect_type_name": "彩钢瓦",
+      "inspect_object_type_name": "硬飘浮物类",
+      "isFault": "True"
+    },
+    {
+      "Box": {
+        "x1": 1043,
+        "x2": 1072,
+        "y1": 376,
+        "y2": 447
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 12,
+      "Score": 0.8772,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 978,
+        "x2": 1016,
+        "y1": 1242,
+        "y2": 1323
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 13,
+      "Score": 0.8749,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 884,
+        "x2": 927,
+        "y1": 79,
+        "y2": 106
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 14,
+      "Score": 0.8736,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 944,
+        "x2": 975,
+        "y1": 1,
+        "y2": 29
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 15,
+      "Score": 0.8482,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    },
+    {
+      "Box": {
+        "x1": 1060,
+        "x2": 1090,
+        "y1": 0,
+        "y2": 29
+      },
+      "FaultType": "ENV_1_8_0",
+      "FigureType": "ENV_1",
+      "ObjectNo": "ENV_1_8",
+      "OrderNo": 16,
+      "Score": 0.8343,
+      "defect_type_name": "汽车",
+      "inspect_object_type_name": "载具类",
+      "isFault": "False"
+    }
+  ],
+  "id": "2025011601",
+  "msg": "successed",
+  "path": "F:/2023JH项目/202307模型权重更新/周边环境/jh_detect_environment_mengft-v1.0.20241117/data/545.jpg",
+  "time": 0.3595,
+  "version": "v1.0.20230101"
+}
