@@ -5,8 +5,10 @@ import cv2
 import random
 import csv
 import yaml
+import numpy as np
 from ultralytics import YOLO
-from plot_result.plot import plot_one_box_pil, plot_one_box_mixed
+from plot_result.plot import plot_one_box_only_pil
+from PIL import Image
 
 def load_config(path, model_name):
     with open(path, 'r', encoding='utf-8') as file:
@@ -79,15 +81,18 @@ if __name__ == "__main__":
 
         results = model.predict(im0)
         confs, boxes, cls_num = results[0].boxes.conf, results[0].boxes.xyxy, results[0].boxes.cls
+        shape = im0.shape[0]
+        im0 = Image.fromarray(cv2.cvtColor(im0, cv2.COLOR_BGR2RGB))
         for xyxy, conf, num in zip(boxes, confs, cls_num):
             conf = float(conf) * 100
             label_name = names[int(num)]
             label_name_ch = mapping_ch[label_name]
-            im0 = plot_one_box_mixed(xyxy=xyxy, img=im0, label=f'{label_name_ch} {conf:.2f}%', color=colors[label_name], line_thickness=int(im0.shape[0] / 250))
+            im0 = plot_one_box_only_pil(xyxy=xyxy, img=im0, label=f'{label_name_ch} {conf:.2f}%', color=colors[label_name], line_thickness=int(shape / 250))
             
             if args.write_csv:
                 csv_writer.writerow([timestamp, label_name, list(map(int, xyxy.tolist())), f"{conf:.2f}%"])  
 
+        im0 = cv2.cvtColor(np.asarray(im0), cv2.COLOR_RGB2BGR)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
         pipe.stdin.write(im0.tobytes())

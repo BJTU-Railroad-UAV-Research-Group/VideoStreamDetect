@@ -44,35 +44,40 @@ def plot_one_box_pil(xyxy, img, color=None, label=None, line_thickness=None, fon
     # 返回 OpenCV 格式的图像
     return cv2.cvtColor(np.asarray(img_pil), cv2.COLOR_RGB2BGR)
 
-def plot_one_box_mixed(xyxy, img, color=None, label=None, line_thickness=None, font=FONT):
-    tl = line_thickness or round(0.002 * (img.shape[0] + img.shape[1]) / 2) + 1
+def plot_one_box_only_pil(xyxy, img, color=None, label=None, line_thickness=None, font=FONT):
+    
+    # 将 OpenCV 图像转换为 PIL 图像
+    # img_pil = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    
+    # 创建 ImageDraw 对象
+    draw = ImageDraw.Draw(img)
+    
+    # 计算默认线条宽度
+    tl = line_thickness or round(0.002 * (img.size[0] + img.size[1]) / 2) + 1
     color = color or [random.randint(0, 255) for _ in range(3)]
-
+    
+    # 边界框坐标
     c1, c2 = (int(xyxy[0]), int(xyxy[1])), (int(xyxy[2]), int(xyxy[3]))
-
-    # 用 OpenCV 绘制矩形框
-    cv2.rectangle(img, c1, c2, color, thickness=tl, lineType=cv2.LINE_AA)
+    
+    # 绘制矩形框
+    draw.rectangle([c1, c2], outline=tuple(color), width=tl)
 
     if label:
-        # 用 PIL 仅绘制文字区域
-        img_pil = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-        draw = ImageDraw.Draw(img_pil)
-
-        # 计算文本尺寸
+        tf = max(tl - 1, 1)  # 字体厚度
+        
+        # 计算文本的边界框
         bbox = draw.textbbox((0, 0), label, font=font)
-        t_width, t_height = bbox[2] - bbox[0], bbox[3] - bbox[1]
-
-        # 背景矩形
-        label_background = (c1[0], c1[1] - t_height - 3, c1[0] + t_width, c1[1])
+        t_size = (bbox[2] - bbox[0], bbox[3] - bbox[1])  # 宽度和高度
+        
+        # 标签框的底色填充
+        label_background = (c1[0], c1[1] - t_size[1] - 3, c1[0] + t_size[0], c1[1])
         draw.rectangle(label_background, fill=tuple(color))
-
-        # 绘制文字（白色文字）
-        draw.text((c1[0], c1[1] - t_height - 2), label, fill=(255, 255, 255), font=font)
-
-        # 转回 OpenCV 格式
-        img = cv2.cvtColor(np.asarray(img_pil), cv2.COLOR_RGB2BGR)
-
-    return img
+        
+        # 在框内绘制文本
+        draw.text((c1[0], c1[1] - t_size[1] - 2), label, fill=(255, 255, 255), font=font)
+    
+    # 返回 OpenCV 格式的图像
+    return img # cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
 
 def read_CN_img(img):
     return cv2.imdecode(np.fromfile(img, dtype=np.uint8), 1)
