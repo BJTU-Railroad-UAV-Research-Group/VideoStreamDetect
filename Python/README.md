@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-该项目包括一个 `start-v1.0.20250114.sh`和一个`start-v1.0.20250225.sh` 脚本，旨在启动并持续运行 `process.py` 脚本。`process.py` 脚本用于视频流处理、目标检测，并将处理结果推送至指定的流媒体服务。此脚本支持传入多个超参数，用户可以自定义输入流、输出流、FFmpeg路径以及YOLO模型路径。
+该项目包括 `start-v1.0.20250114.sh`、`start-v1.0.20250225.sh` 、`start-v1.0.20250411.sh`脚本，旨在启动并持续运行 `process.py` 脚本。`process.py` 脚本用于视频流处理、目标检测，并将处理结果推送至指定的流媒体服务。此脚本支持传入多个超参数，用户可以自定义输入流、输出流、FFmpeg路径以及YOLO模型路径。
 
 ## 系统要求
 
@@ -160,6 +160,54 @@
 ### 4. 退出脚本
 
 - 若要手动停止脚本，可以按 `Ctrl+C`。
+
+## 使用说明（4）
+
+### 1. 启动 `start-v1.0.20260329.sh` 脚本
+
+`start-v1.0.20260329.sh` 脚本用于启动 `process-v1.0.20260329.py`，在原有版本基础上优化了目标检测效率与中文标注兼容性，支持以下超参数：
+
+- `--input_stream`：输入流的 URL，默认为 `rtmp://localhost:1935/obs/stream`。
+- `--output_stream`：输出流的 URL，默认为 `rtmp://localhost:1935/output/stream`。
+- `--ffmpeg_path`：FFmpeg 执行文件的路径，默认为 `D:/VideoStream/ffmpeg-N-102557-g11b489d592-win64-gpl/bin/ffmpeg.exe`。
+- `--yolo_model_path`：YOLO 模型权重文件的路径，默认为 `weight/construction_detect_construction_mengft-v1.0.20260329.pt`。
+- `--csv_path`：输出的 CSV 文件路径，默认为 `output.csv`。
+- `--model_name`：在`config/plot_name_ch.yml`文件中要映射中文名称的模型名称，默认为 `construction_detect_construction_mengft-v1.0.20260329`。
+
+#### 启动脚本：
+
+```bash
+./start-v1.0.20260329.sh --input_stream "rtmp://your_input_stream" --output_stream "rtmp://your_output_stream" --ffmpeg_path "/path/to/ffmpeg" --yolo_model_path "/path/to/yolo_model.pt" --csv_path "/path/to/output.csv" --model_name "model_name_in_plot_name_ch_yml_file" --
+```
+
+如果不传入某些参数，则会使用默认值。例如：
+
+```bash
+./start-v1.0.20260329.sh --csv_path "results.csv"  --write_csv "true"
+```
+
+其他参数使用默认值。
+
+### 2. 参数说明
+
+|        参数         |                          描述                           |                            默认值                            |
+| :-----------------: | :-----------------------------------------------------: | :----------------------------------------------------------: |
+|  `--input_stream`   |                      输入流的 URL                       |              `rtmp://localhost:1935/obs/stream`              |
+|  `--output_stream`  |                      输出流的 URL                       |            `rtmp://localhost:1935/output/stream`             |
+|   `--ffmpeg_path`   |                  FFmpeg 执行文件的路径                  | `D:/VideoStream/ffmpeg-N-102557-g11b489d592-win64-gpl/bin/ffmpeg.exe` |
+| `--yolo_model_path` |                 YOLO 模型权重文件的路径                 | `weight/construction_detect_construction_mengft-v1.0.20260329.pt` |
+|    `--csv_path`     |                   输出 CSV 文件的路径                   |                         `output.csv`                         |
+|    `--write_csv`    |                       是否写入csv                       |                            false                             |
+|   `--model_name`    | `config/plot_name_ch.yml`文件中要映射中文名称的模型名称 |   `construction_detect_construction_mengft-v1.0.20260329`    |
+
+### 3. 脚本功能
+
+- **`process-v1.0.20260329.py`**：该脚本在 `process-v1.0.20250411.py` 基础上增加了websorcket推送功能，并持续运行，即使在没有视频流接入时也会持续等待。
+- **`start-v1.0.20260329.sh`**：该脚本通过 `python process-v1.0.20260329.py` 启动视频流处理，支持传入超参数，若未传入则使用默认值。
+
+### 4. 退出脚本
+
+- 若要手动停止脚本，可以按 `Ctrl+C`；脚本退出时会自动清理临时缓存，并将未写入 CSV 的检测数据补全保存。
 
 ## 常见问题
 
